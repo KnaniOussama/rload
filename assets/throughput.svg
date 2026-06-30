@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="230" viewBox="0 0 680 230" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+  <rect x="0.5" y="0.5" width="679" height="229" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="20" y="28" font-size="16" font-weight="700" fill="#24292f">rload vs Node — throughput</text>
+  <text x="20" y="48" font-size="11" fill="#57606a">200,000 requests @ concurrency 200 · local target server</text>
+  <text x="20" y="74" font-size="12" font-weight="600" fill="#57606a">Throughput (req/s) — higher is better</text>
+  <text x="120" y="107" font-size="12" text-anchor="end" fill="#24292f">Rust (rload)</text>
+  <rect x="130" y="86" width="480" height="34" rx="4" fill="#dea584"/>
+  <text x="618" y="107" font-size="13" font-weight="700" fill="#24292f">37,985</text>
+  <text x="120" y="175" font-size="12" text-anchor="end" fill="#24292f">Node baseline</text>
+  <rect x="130" y="154" width="277" height="34" rx="4" fill="#8cc84b"/>
+  <text x="415" y="175" font-size="13" font-weight="700" fill="#24292f">21,896</text>
+  <text x="20" y="214" font-size="12" fill="#57606a">Rust drives <tspan font-weight="700" fill="#24292f">1.7×</tspan> the throughput of the Node baseline.</text>
+
+</svg>

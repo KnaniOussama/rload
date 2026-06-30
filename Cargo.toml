@@ -1,0 +1,26 @@
+[package]
+name = "rload"
+version = "0.1.0"
+edition = "2021"
+description = "A small, fast HTTP load testing CLI written in Rust"
+license = "MIT"
+repository = "https://github.com/KnaniOussama/rload"
+readme = "README.md"
+keywords = ["http", "load-testing", "benchmark", "cli", "async"]
+categories = ["command-line-utilities", "web-programming"]
+
+[[bin]]
+name = "rload"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "sync"] }
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "gzip"] }
+hdrhistogram = "7"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
