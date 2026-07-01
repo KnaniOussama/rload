@@ -1,5 +1,6 @@
 # Normalize line endings; keep shell scripts LF so they run on Linux/macOS.
+bench/** linguist-vendored
 * text=auto
 *.sh text eol=lf
 *.rs text eol=lf
-bench/** linguist-vendored
+
